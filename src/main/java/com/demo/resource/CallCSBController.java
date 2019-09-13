@@ -1,7 +1,6 @@
 package com.demo.resource;
 
 import com.demo.autoinject.TestController;
-import com.demo.service.AutoInjectService;
 import com.demo.util.SpringContextUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
@@ -13,8 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CallCSBController {
 
-    @Autowired
-    AutoInjectService autoInjectService;
 
     @GetMapping("/bean")
     public String registerBean() {
