@@ -23,9 +23,9 @@ public class CacheController {
         return person;
     }
 
-    @GetMapping("/get/{id}")
-    public Person get(@PathVariable String id){
-        return personRepository.findPerson(id);
+    @GetMapping("/get/{name}")
+    public Person get(@PathVariable String name){
+        return personRepository.findPerson(name);
     }
 
 }

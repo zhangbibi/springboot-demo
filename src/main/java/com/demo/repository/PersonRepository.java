@@ -2,6 +2,7 @@ package com.demo.repository;
 
 import com.demo.domain.Person;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.data.repository.NoRepositoryBean;
 
 /**
  * Created by zhangyaping on 20/3/28.

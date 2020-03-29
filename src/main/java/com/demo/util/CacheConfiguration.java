@@ -21,7 +21,7 @@ public class CacheConfiguration {
 
         SimpleCacheManager simpleCacheManager = new SimpleCacheManager();
         ConcurrentMapCache cache = new ConcurrentMapCache("cacheTest");
-        ConcurrentMapCache personCache = new ConcurrentMapCache("persons");
+        ConcurrentMapCache personCache = new ConcurrentMapCache("person");
 
         simpleCacheManager.setCaches(Arrays.asList(cache, personCache));
 
